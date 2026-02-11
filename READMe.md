@@ -16,10 +16,4 @@ This project is currently under active development.
 - **Surendra** – https://github.com/Surya-exp23
 
 ---
-<<<<<<< HEAD
-=======
 
-just copied
-copied
-just
->>>>>>> be2a7beac94ffbb1e47f4ec32a99d3e225d033bf
