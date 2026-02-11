@@ -16,6 +16,3 @@ This project is currently under active development.
 - **Surendra** – https://github.com/Surya-exp23
 
 ---
-
-just copied
-copied
