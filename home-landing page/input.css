@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&family=Share+Tech&display=swap');
 @import "tailwindcss";
 @tailwind utilities;
 
@@ -9,4 +9,40 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-boldonse: "Boldonse", sans-serif;
   --font-pixelify: "Pixelify Sans", sans-serif;
+  --font-sharetech: "Share Tech", sans-serif;
+}
+
+
+.tagbox{
+    position: relative;
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #b600ce, #000000, #6600c5, #5300a0, #dedede, #b600ce);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+
+}
+
+
+@keyframes animationGradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+.tagbox .tag{
+    position: absolute;
+    inset: 2px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition:  0.5s ease;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
 }

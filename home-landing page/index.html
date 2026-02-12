@@ -34,7 +34,7 @@
   
     <main>
 
-        <section class="h-screen w-full relative flex items-center justify-center overflow-hidden">
+        <section id="home" class="h-screen w-full relative flex items-center justify-center overflow-hidden">
     
             <!-- VIDEO BACKGROUND -->
             <video 
@@ -52,10 +52,47 @@
             <!-- overlay to dark the image  -->
             <div class="absolute top-0 left-0 w-full h-full bg-black/30 z-[2]"></div>
 
+            
+
             <!-- main text -->
-            <h1 class="absolute text-center font-black leading-[0.9] text-[clamp(60px,11vw,180px)] tracking-tighter z-10 px-4 bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent">
-                LEARN TO <br /> SPEED UP!
-            </h1>
+            <div class="absolute inset-0 flex items-center justify-center z-10">
+    
+          <!-- Inner Container for Title and Tag -->
+          <div class="flex flex-col items-center gap-4">
+        
+          <!-- TAG BOX (above the title) -->
+          <div class="tagbox z-12">
+            <div class="tag gap-3 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full flex items-center text-white text-sm font-semibold tracking-widest">
+                INTRODUCING <i class="ri-keyboard-line"></i>
+            </div>
+          </div>
+
+        <!-- MAIN TITLE -->
+         <h1 class="text-center font-black leading-[0.9] text-[clamp(30px,8vw,110px)] tracking-tighter bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent px-4">
+             Your ideas Deserve
+        </h1>
+        <h1 class="text-center font-black leading-[0.9] text-[clamp(30px,8vw,110px)] tracking-tighter bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent px-4">
+             Faster Fingers.
+        </h1>
+        
+        <div class="text-white text-xl mt-12 flex">
+          <div>Treat typing as a skill worth improving,<br>
+        not just another chore to get through.</div>
+          <i class="ri-double-quotes-r ml-auto text-4xl"></i>
+      </div>
+
+        <!-- social media icons -->
+
+      <div class="flex items-center gap-6 pt-2 z-12">
+              <a href="#" class="text-xl text-slate-300 transition-all duration-300 hover:text-purple-500 hover:scale-125 hover:-translate-y-0.5"><i class="ri-facebook-fill "></i></a>
+              <i class="ri-twitter-x-line text-xl text-slate-300 transition-all duration-300 hover:text-purple-500 hover:scale-125 hover:-translate-y-0.5"></i>
+              <i class="ri-instagram-line text-xl text-slate-300 transition-all duration-300 hover:text-purple-500 hover:scale-125 hover:-translate-y-0.5"></i>
+              <i class="ri-linkedin-fill text-xl text-slate-300 transition-all duration-300 hover:text-purple-500 hover:scale-125 hover:-translate-y-0.5"></i>
+            </div>
+        </div>
+        
+        </div>
+            
 
             <!-- main options -->
             <div class="absolute left-0 bottom-[100px] md:bottom-[100px] w-[200px] md:w-[280px] bg-white/15 backdrop-blur-[10px] p-[20px_15px] md:p-[30px_20px] rounded-r-[20px] z-40">
@@ -76,21 +113,83 @@
             </div>
 
             <!-- muscot image (temporary) -->
-            <div class="relative z-10">
-                <img src="assests/mascut.png" alt="Monkey Mascot" class="h-[85vh] max-h-[850px] md:h-[90vh] md:max-h-[900px] object-contain"/>
-            </div>
+            <div class="absolute right-[-160px] bottom-30 z-7">
+          <img src="assests/mascut.png" alt="Monkey Mascot" class="h-[65vh] max-h-[600px] md:h-[70vh] md:max-h-[700px] object-contain"/> </div>
 
             
-            <div class="absolute bottom-[40px] right-[20px] md:right-[40px] text-right text-white z-[4] flex flex-col items-end gap-1">
+            <div class="absolute bottom-[40px] right-[20px] md:right-[40px] text-right text-white z-[12] flex flex-col items-end gap-1">
             <img 
             src="assests/year-2026.png" 
             alt="2026" 
             class="h-16 md:h-32 lg:h-18 w-auto object-contain" />
             <p class="text-sm md:text-base font-bold tracking-wide font-poppins">YEAR WHERE SPEED MATTERS!</p>
             </div>
-
+            
         </section>
 
+
+        <div class="bg-[#000000] text-[#ffffff] py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 
+              w-full grid grid-cols-1 gap-8 
+              md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+          <img src="assests/keyboardart1.png" alt="">
+          <!-- card 1-->
+           <div class="service_card  border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#b57600] hover:translate-y-1 duration-300 space-y-5 font-poppins">
+            <div class="flex items-center gap-5">
+              
+              <i class="ri-dashboard-2-line text-3xl md:text-4xl"></i>
+              <p class="md:text-lg font-bold">
+                Real-Time <br> 
+                WPM Tracking
+              </p>
+            </div>
+            <p>
+              Track your WPM & <br> accuracy in real time.
+            </p>
+           </div>
+
+           <!-- card 2-->
+           <div class="service_card border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#b57600] hover:translate-y-1 duration-300 space-y-5 font-poppins">
+            <div class="flex items-center gap-5 ">
+              <i class="ri-bar-chart-box-ai-line text-3xl md:text-4xl"></i>
+              <p class="md:text-lg font-bold">
+                Real time <br>
+                analysis
+              </p>
+            </div>
+            <p>
+             View your speed and accuracy in <br> real time to improve in new key press.
+            </p>
+           </div>
+
+           
+
+           <!-- card 3-->
+           <div class="service_card border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#b57600] hover:translate-y-1 duration-300 space-y-5 font-poppins">
+            <div class="flex items-center gap-5">
+              
+              <i class="ri-stairs-line text-3xl md:text-4xl"></i>
+              <p class="md:text-lg font-bold">
+                Beginner <br>
+                friendly
+              </p>
+            </div>
+            <p>
+              Here we covered every user even <br> if you are beginner or advance. 
+            </p>
+           </div>
+        </div>
+       </div>
+
+
+       <section>
+          <div>
+            <div class="text-3xl ">
+            MASTER THE ART OF <br>
+            FAST & ACCURATE TYPING
+            </div>
+          </div>
+       </section>
     </main>
 
 </body>
