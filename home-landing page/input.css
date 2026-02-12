@@ -1,1 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
+@tailwind utilities;
+
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-boldonse: "Boldonse", sans-serif;
+  --font-pixelify: "Pixelify Sans", sans-serif;
+}

@@ -4,33 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assests/logo main.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
     <link href="./output.css" rel="stylesheet">
     <title>Keycraft</title>
 </head>
 <body>
-    <header class="fixed w-full top-0 left-0 z-50">
+  
+    <header class="fixed w-full top-0 left-0 z-50 font-poppins">
         <nav class="container flex items-center justify-between h-16 sm:h-20">
-            <div class="sm:text-2xl pl-4 sm:pl-6">KEYCRAFT</div>
+            <div class="sm:text-2xl pl-4 sm:pl-6 text-white font-bold">KEYCRAFT</div>
 
             <div class="absolute top-0 left-full min-h-[80vh] w-full backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:flex-1">
-            <ul class="flex flex-col items-center gap-8 lg:flex-row">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#review">Reviews</a>
-            </li>
-          </ul>
+                <ul class="flex flex-col items-center gap-12 lg:flex-row lg:ml-4 text-white font-pixelify">
+                    <li>
+                        <a href="#home" class="pl-2">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="pl-2">About</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="pl-2">Reviews</a>
+                    </li>
+                </ul>
             </div>
             <div></div>
         </nav>
     </header>
 
+  
     <main>
 
+        <section class="h-screen w-full relative flex items-center justify-center overflow-hidden">
+    
+            <!-- VIDEO BACKGROUND -->
+            <video 
+                class="absolute top-0 left-0 w-full h-full object-cover z-[1]" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+            >
+                <source src="assests/video-bg.mp4" type="video/mp4">
+                <source src="assests/background-video.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- overlay to dark the image  -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/30 z-[2]"></div>
+
+            <!-- main text -->
+            <h1 class="absolute text-center font-black leading-[0.9] text-[clamp(60px,11vw,180px)] tracking-tighter z-10 px-4 bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent">
+                LEARN TO <br /> SPEED UP!
+            </h1>
+
+            <!-- main options -->
+            <div class="absolute left-0 bottom-[100px] md:bottom-[100px] w-[200px] md:w-[280px] bg-white/15 backdrop-blur-[10px] p-[20px_15px] md:p-[30px_20px] rounded-r-[20px] z-40">
+                <div class="flex flex-col gap-[14px]">
+                    <button class="px-[18px] py-[14px] rounded-[12px] border-none bg-white/95 text-sm cursor-pointer transition-all duration-300 hover:bg-white/95 hover:translate-x-[5px] font-bold font-montserrat flex items-center justify-between">
+                    <span>LOGIN <span class="font-light text-sm">(existing user)</span></span>
+                    <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button class="px-[18px] py-[14px] rounded-[12px] border-none bg-white/95 text-sm cursor-pointer transition-all duration-300 hover:bg-white/95 hover:translate-x-[5px] font-bold font-montserrat flex items-center justify-between">
+                    <span>GUEST USER</span> 
+                    <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button class="px-[18px] py-[14px] rounded-[12px] border-none bg-white/95 text-sm cursor-pointer transition-all duration-300 hover:bg-white/95 hover:translate-x-[5px] font-bold font-montserrat flex items-center justify-between">
+                    <span>VISIT REPO.</span>
+                    <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- muscot image (temporary) -->
+            <div class="relative z-10">
+                <img src="assests/mascut.png" alt="Monkey Mascot" class="h-[85vh] max-h-[850px] md:h-[90vh] md:max-h-[900px] object-contain"/>
+            </div>
+
+            
+            <div class="absolute bottom-[40px] right-[20px] md:right-[40px] text-right text-white z-[4] flex flex-col items-end gap-1">
+            <img 
+            src="assests/year-2026.png" 
+            alt="2026" 
+            class="h-16 md:h-32 lg:h-18 w-auto object-contain" />
+            <p class="text-sm md:text-base font-bold tracking-wide font-poppins">YEAR WHERE SPEED MATTERS!</p>
+            </div>
+
+        </section>
+
     </main>
+
 </body>
 </html>
