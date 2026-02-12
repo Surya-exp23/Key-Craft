@@ -1,6 +1,289 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 body {
-    font-family: 'Rajdhani', sans-serif;
+      font-family: "Manrope", sans-serif;
+      padding : 0px;
+      margin : 0px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #130d28, #060410);
+      box-sizing: border-box;
+
+}
+
+span {
+      color: #a855f7;
+
+}
+
+.maincard {
+      background-color: #1a0518;
+      width: min( 1000px, 95vw);
+      height: min(640px, 85vh);
+      display: flex;
+
+}
+
+.leftpart {
+      background: linear-gradient(160deg, #5b2a90 0%,#3a0f63 45%, #1a0433 75%, #0b011a 100%);
+      color: aliceblue;
+      padding: 10px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:
+       radial-gradient(ellipse at 0% 0%, rgba(120, 40, 200, 0.75) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 90%, rgba(140, 20, 60, 0.4) 0%, transparent 50%),
+       linear-gradient(to bottom, #1a0533 0%, #0d001a 100%);
+}
+
+
+
+
+.leftpart .leftcontent {
+      
+      margin: 0px;
+      height: 90%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+
+.leftheading {
+      font-size: 10px ;
+      display: flex;
+      gap: 5px;
+      
+}
+
+
+.leftheading img {
+      width: 40px;
+}
+
+.leftbottom {
+      margin-bottom: 0px;
+      display: flex;
+      align-items: center;
+}
+
+
+.leftmain .welcomeback {
+      color: #c084fc;
+      font-size: 11px;
+      font-weight: bold;
+      width : 140px;
+      border-radius: 20px;
+      padding: 4px;
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      display : flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.35)
+      
+}
+
+
+.leftmain h1 {
+      font-size: 40px;
+      margin: 7px;
+}
+
+.leftmain p {
+      font-size: 12px;
+}
+
+.leftbottom .circles {
+      display: flex;
+
+}
+
+.circles .circle {
+      height: 25px;
+      width: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 2px;
+      border: solid  #0b011a ;
+}
+
+.c1{
+    background: linear-gradient(135deg, #ec4899, #f472b6);
+    margin-right: -5px;
+}
+.c2{
+    background: linear-gradient(135deg, #f97316, #fb923c);
+   margin-right: -5px;
+}
+.c3{
+  background: linear-gradient(135deg, #14b8a6, #22d3ee);
+  margin-right: -5px;
+
+}
+.c4{
+    background: linear-gradient(135deg, #a855f7, #c084fc);
+      margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*  now right part work starts */
+
+
+
+
+
+
+.rightpart {
+      flex: 1;
+      background-color: #0a0812;
+      color: aliceblue;
+      padding: 10px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+
+.rightpart .rightlogin {
+        margin: 0px;
+      height: 90%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+}
+
+.rightlogin .righttop {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+}
+
+.rightlogin .righttop .securelogin{
+      color: #c084fc;
+      font-size: 13px;
+      font-weight: bold;
+      margin: 0px;
+      
+
+}
+
+.rightlogin .righttop h2{
+      font-size: 30px;
+    
+      width: 60%;
+      margin: 0px;
+}
+
+.rightlogin .righttop p{
+      font-size: 12px;
+      padding: 5px;
+      margin: 0px;
+
+}
+
+.rightlogin .rightform {
+      font-size: 12px;
+      margin-top: 0px;
+     
+      height: 50%;
+
+}
+
+.rightlogin .rightform form {
+    
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding-bottom: 15px;
+      
+}
+
+.rightlogin .rightform form label {
+      margin-bottom: 2px;
+      margin-top: 5px;
+}
+
+.rightlogin .rightform form input {
+      padding: 12px 16px 12px 42px;
+      margin-top: 5px;
+      background-color :#434350;
+      border: 1px solid rgba(168, 85, 247, .25);
+      border-radius: 9px;
+      margin-bottom: 7px;
+      color:#fff;
+}
+
+
+
+
+.rememberme {
+
+      display: flex;
+      justify-content: space-between;
+
+}
+
+.checkbox {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.loginform button {
+      background: linear-gradient(135deg, #a855f7, #ec4899);
+      padding: 11px;
+      border-radius: 5px;
+      color: aliceblue;
+      border : none;
+      box-shadow: 0 8px 28px rgba(168, 85, 247, .4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightlogin .rightbottom {
+      margin-top: 35px;
+      display: flex;
+      color: rgb(202, 224, 244);
+      justify-content: center;
+      align-items: center;
+      font-size: 11px;
+
+}
+.rightlogin .rightbottom a{
+      color: #ec4899;
+      
 }
