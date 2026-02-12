@@ -12,7 +12,7 @@
   
     <header class="fixed w-full top-0 left-0 z-50 font-poppins">
         <nav class="container flex items-center justify-between h-16 sm:h-20">
-            <div class="sm:text-2xl pl-4 sm:pl-6 text-white font-bold">KEYCRAFT</div>
+            <div class="sm:text-2xl pl-4 sm:pl-6 text-white font-bold font-newrocker">KEYCRAFT</div>
 
             <div class="absolute top-0 left-full min-h-[80vh] w-full backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:flex-1">
                 <ul class="flex flex-col items-center gap-12 lg:flex-row lg:ml-4 text-white font-pixelify">
@@ -183,14 +183,87 @@
 
 
        <section>
-          <div>
-            <div class="text-3xl ">
-            MASTER THE ART OF <br>
-            FAST & ACCURATE TYPING
+    <div class="container mx-auto px-8 py-16 min-h-[600px] relative overflow-hidden bg-black">
+        
+        <!-- will work on that -->
+        <div class="absolute text-[15rem] font-black text-[rgba(253,0,253,0.12)] leading-[0.8] right-[-2rem] top-1/2 -translate-y-1/2 tracking-[-0.05em] pointer-events-none z-0 font-newrocker">KEYCRAFT</div>
+        
+        <div class="relative z-10 max-w-6xl">
+            <!-- heading -->
+            <div class="relative mb-12">
+                <h1 class="text-[clamp(30px,8vw,110px)] leading-23 font-extrabold text-white">
+                    MASTER THE ART OF <br>
+                    <span class="bg-gradient-to-b from-white/95 to-purple-700 bg-clip-text text-transparent">FAST</span> & 
+                    <span class="bg-gradient-to-b from-white/95 to-purple-700 bg-clip-text text-transparent">ACCURATE</span> <br>
+                    <span>TYPING</span>
+                </h1>
+
+                
+                <img src="assests/card32.png" alt="Performance Card" 
+                     class="absolute right-[-19rem] top-[150px] w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] xl:w-[75%] max-w-[700px] z-20 pointer-events-none"/>
             </div>
-          </div>
-       </section>
+            
+            
+            <div class="space-y-4 max-w-md relative z-20 min-h-[400px]">
+                
+                
+                <div class="dropdown-item">
+                    <button onclick="toggleDropdown('speed')" class="w-full flex items-center justify-between bg-transparent border-none text-left py-3 cursor-pointer group transition-all duration-300 rounded-lg px-4" id="button-emerging">
+                        <span class="text-lg font-semibold flex items-center gap-3">
+                            <span class="plus-icon text-white text-2xl font-bold transition-transform duration-300" id="icon-speed">+</span>
+                            <span class="text-white">Typing Speed Matters</span>
+                        </span>
+                    </button>
+                    <div id="dropdown-speed" class="dropdown-content overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+                        <div class="pl-12 pr-4 py-4">
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                Typing speed is no longer just a skill — it's a productivity multiplier. Faster typing reduces mental friction, keeps you in flow.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 2 -->
+                <div class="dropdown-item">
+                    <button onclick="toggleDropdown('accuracy')" class="w-full flex items-center justify-between bg-transparent border-none text-left py-3 cursor-pointer group transition-all duration-300 rounded-lg px-4" id="button-sustainable">
+                        <span class="text-lg font-semibold flex items-center gap-3">
+                            <span class="plus-icon text-white text-2xl font-bold transition-transform duration-300" id="icon-accuracy">+</span>
+                            <span class="text-white">Accuracy Builds Confidence</span>
+                        </span>
+                    </button>
+                    <div id="dropdown-accuracy" class="dropdown-content overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+                        <div class="pl-12 pr-4 py-4">
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                Speed without accuracy leads to frustration. Our platform focuses on precision-first practice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 3 -->
+                <div class="dropdown-item">
+                    <button onclick="toggleDropdown('practice')" class="w-full flex items-center justify-between bg-transparent border-none text-left py-3 cursor-pointer group transition-all duration-300 rounded-lg px-4" id="button-digital">
+                        <span class="text-lg font-semibold flex items-center gap-3">
+                            <span class="plus-icon text-white text-2xl font-bold transition-transform duration-300" id="icon-practice">+</span>
+                            <span class="text-white">Practice That Adapts to You</span>
+                        </span>
+                    </button>
+                    <div id="dropdown-practice" class="dropdown-content overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+                        <div class="pl-12 pr-4 py-4">
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                Every typist has unique strengths and weaknesses. Our intelligent practice system identifies your trouble spots and adjusts difficulty in real-time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
     </main>
 
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -18,3 +18,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 });
+
+
+function toggleDropdown(section) {
+    const dropdown = document.getElementById(`dropdown-${section}`);
+    const icon = document.getElementById(`icon-${section}`);
+    const button = icon.closest('button');
+    
+    const isOpen = dropdown.style.maxHeight && dropdown.style.maxHeight !== '0px';
+    
+    if (isOpen) {
+       
+        dropdown.style.maxHeight = '0px';
+        icon.textContent = '+';
+        icon.style.transform = 'rotate(0deg)';
+        button.style.background = 'transparent';
+    } else {
+        
+        dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+        icon.textContent = '−';
+        icon.style.transform = 'rotate(180deg)';
+        button.style.background = '#7200a7';
+        
+    }
+}

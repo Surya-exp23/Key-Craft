@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&family=Share+Tech&display=swap');
 @import "tailwindcss";
 @tailwind utilities;
 
@@ -10,6 +10,7 @@
   --font-boldonse: "Boldonse", sans-serif;
   --font-pixelify: "Pixelify Sans", sans-serif;
   --font-sharetech: "Share Tech", sans-serif;
+  --font-newrocker: "New Rocker", cursive;
 }
 
 
@@ -46,3 +47,20 @@
     font-size: 0.875rem;
     font-weight: 500;
 }
+
+            
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.plus-icon {
+    transition: transform 0.3s ease;
+}
+
+/* button:hover {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.15), rgba(126, 34, 206, 0.1)) !important;
+    backdrop-filter: blur(10px);
+} */
