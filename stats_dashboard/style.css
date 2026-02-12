@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+body {
+  margin: 0;
+  background: #0a0a0f;
+  font-family: Orbitron, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #07070c;
+  border-bottom: 2px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+}
+
+/* LEFT SECTION */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  transform: skew(-10deg);
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #00f7ff;
+  text-shadow:
+    0 0 5px #00f7ff,
+    0 0 15px #00f7ff,
+    0 0 30px #00f7ff;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+/* RIGHT SECTION */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+/* PARALLELOGRAM BUTTON */
+
+a.parallelogram {
+  display: inline-block;
+  padding: 6px 16px;
+  transform: skew(-20deg);
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+a.parallelogram span {
+  display: inline-block;
+  transform: skew(20deg);
+}
+
+/* HOVER EFFECT */
+
+a.parallelogram:hover {
+  background: #00f7ff;
+  color: #000;
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+/* USER MENU */
+
+.user-menu {
+  position: relative;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background: #0a0a15;
+  border: 1px solid #0ff;
+  list-style: none;
+  padding: 8px 0;
+  display: none;
+  min-width: 250px;
+  box-shadow: 0 0 12px #0ff;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+  color: #ddd;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background: #0ff;
+  color: #000;
+}
+
+/* SHOW DROPDOWN */
+
+.user-menu:hover .dropdown {
+  display: block;
+}
