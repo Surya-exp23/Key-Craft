@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background: linear-gradient(135deg,#0d1b2a,#1b0a2f,#3a0a4f);
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:25px 60px;
+}
+
+.logo{
+    font-family:'Orbitron',sans-serif;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:rgba(255,255,255,0.8);
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00eaff;
+}
+
+/* PANEL STYLE */
+.panel{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+.panel-box{
+    width:600px;
+    padding:50px;
+    background:#111;
+    border:1px solid #00eaff;
+    box-shadow:0 0 20px rgba(0,234,255,0.2);
+    position:relative;
+}
+
+.tag{
+    color:#00eaff;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.panel-box h1{
+    font-family:'Orbitron',sans-serif;
+    margin:15px 0;
+}
+
+.motto{
+    margin-bottom:20px;
+    color:#c77dff;
+}
+
+.divider{
+    height:2px;
+    width:100%;
+    background:linear-gradient(to right,#00eaff,#c77dff);
+    margin:25px 0;
+}
+
+.description{
+    line-height:1.8;
+}
