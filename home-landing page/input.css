@@ -64,3 +64,14 @@
     background: linear-gradient(135deg, rgba(147, 51, 234, 0.15), rgba(126, 34, 206, 0.1)) !important;
     backdrop-filter: blur(10px);
 } */
+
+
+@keyframes move {
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+.moving {
+  animation: move 3s linear infinite;
+}
