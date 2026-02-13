@@ -1,64 +1,145 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard - KEY_CRAFT</title>
+  <title>Dashboard - KEY CRAFT</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="../home-landing page/assests/logo main.png">
 </head>
 
 <body>
 
-<canvas id="space"></canvas>
+  <canvas id="space"></canvas>
 
-<!-- header of page  -->
+  <!-- header of page  -->
 
-<header>
-  <nav class="navbar">
+  <header>
+    <nav class="navbar">
 
-    <div class="nav-left">
-      <div class="logo">KEY-CRAFT</div>
+      <div class="nav-left">
+        <div class="logo">KEY CRAFT</div>
 
-      <ul class="nav-links">
-        <li><a href="#" class="parallelogram"><span>Home</span></a></li>
-        <li><a href="#" class="parallelogram"><span>Stats</span></a></li>
-        <li><a href="#" class="parallelogram"><span>About Us</span></a></li>
-        <li><a href="#" class="parallelogram"><span>Contact</span></a></li>
-      </ul>
-    </div>
-
-    <div class="nav-right">
-      <a href="#" class="parallelogram"><span>Theme</span></a>
-
-      <div class="user-menu">
-        <a href="#" class="parallelogram"><span>User</span></a>
-
-        <ul class="dropdown">
-          <li>Profile</li>
-          <li>Change Password</li>
-          <li>Logout</li>
+        <ul class="nav-links">
+          <li><a href="#" class="parallelogram"><span>Home</span></a></li>
+          <li><a href="#" class="parallelogram"><span>Stats</span></a></li>
+          <li><a href="#" class="parallelogram"><span>About Us</span></a></li>
+          <li><a href="#" class="parallelogram"><span>Contact</span></a></li>
         </ul>
       </div>
-    </div>
 
-  </nav>
-</header>
+      <div class="nav-right">
+        <a href="#" class="parallelogram"><span>Theme</span></a>
 
-<main>
+        <div class="user-menu">
+          <a href="#" class="parallelogram"><span>User</span></a>
 
-<!-- hero section of page  -->
+          <ul class="dropdown">
+            <li>Profile</li>
+            <li>Change Password</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      </div>
 
-<section class="hero-section">
+    </nav>
+  </header>
 
-  <!-- LEFT PANEL -->
-  <div class="panel main-panel"></div>
+  <main>
 
-  <!-- RIGHT PANEL -->
-  <div class="panel stats-panel"></div>
+    <!-- hero section of page  -->
 
-</main>
+    <section class="hero-section">
 
-<script src="script.js"></script>
+      <!-- LEFT PANEL -->
+      <div class="panel main-panel">
+
+        <!-- start card -->
+
+        <div class="start_card">
+          <img src="Gemini_Generated_Image_r5f5mor5f5mor5f5.png" alt="" />
+          <div class="card-body">
+            <h2 class="card-title">Touch Typing</h2>
+
+            <div class="score-stars">
+              <p>Score: <span class="score">317,045</span></p>
+              <p>Stars: <span class="stars">647</span></p>
+            </div>
+
+            <div class="start_card-footer">
+              <button class="start-btn">Start Practicing</button>
+              <div class="progress-line">
+                <div class="progress-fill" id="progressBar"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- stats card  -->
+
+        <div class="stats_card">
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <!-- leaderboard space  -->
+      <div class="panel leaderboard-panel">
+        <h2 class="stats-title">Top Typists</h2>
+
+        <div class="leaderboard">
+
+          <div class="leaderboard-header">
+            <span>#</span>
+            <span>User</span>
+            <span>WPM</span>
+          </div>
+
+          <div class="leaderboard-list">
+
+            <div class="leaderboard-item">
+              <span class="rank gold">1</span>
+              <span class="user-name">NeonNinja</span>
+              <span class="user-wpm">128</span>
+            </div>
+
+            <div class="leaderboard-item">
+              <span class="rank silver">2</span>
+              <span class="user-name">CyberWolf</span>
+              <span class="user-wpm">121</span>
+            </div>
+
+            <div class="leaderboard-item">
+              <span class="rank bronze">3</span>
+              <span class="user-name">VoidTyper</span>
+              <span class="user-wpm">115</span>
+            </div>
+
+            <div class="leaderboard-item">
+              <span class="rank">4</span>
+              <span class="user-name">ShadowKeys</span>
+              <span class="user-wpm">108</span>
+            </div>
+
+            <div class="leaderboard-item">
+              <span class="rank">5</span>
+              <span class="user-name">KeyPhantom</span>
+              <span class="user-wpm">101</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
