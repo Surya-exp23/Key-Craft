@@ -7,6 +7,7 @@ toSignup.addEventListener("click", (e) => {
     mainCard.classList.add("signup-active");
 });
 
+
 toLogin.addEventListener("click", (e) => {
     e.preventDefault();
     mainCard.classList.remove("signup-active");
