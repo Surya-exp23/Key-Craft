@@ -168,6 +168,7 @@ a.parallelogram:hover {
   flex: 2;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 /* RIGHT PANEL */
@@ -255,18 +256,263 @@ img {
 
 .stats_card{
   width: 350px;
+  max-height: calc(100vh - 180px);
   background:transparent;
   /* backdrop-filter: blur(8px); */
   border-radius: 14px;
-  overflow: hidden;
-  /* box-shadow: 0 0 15px rgba(0,255,255,0.25); */
+  overflow-y: auto;
+  overflow-x: hidden;
   border: 1px solid #a020f0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Custom Scrollbar */
+.stats_card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.stats_card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.stats_card::-webkit-scrollbar-thumb {
+  background: #a020f0;
+  border-radius: 10px;
+}
+
+.stats_card::-webkit-scrollbar-thumb:hover {
+  background: #b026ff;
+}
+
+/* Stats Sections */
+
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speed-section {
+  gap: 6px;
+}
+
+.time-section {
+  gap: 8px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d66bff;
+  text-shadow: 0 0 8px #a020f0;
+  margin: 0 0 4px 0;
+}
+
+/* Speed Section */
+
+.speed-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(160, 32, 240, 0.2);
+}
+
+.speed-item.current-speed {
+  background: linear-gradient(135deg, rgba(0, 200, 150, 0.2), rgba(0, 150, 120, 0.1));
+  border: 1px solid rgba(0, 200, 150, 0.4);
+}
+
+.speed-label {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.speed-bar-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.speed-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #b026ff, #00d9ff);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.speed-value {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00f7ff;
+  font-weight: bold;
+  font-size: 11px;
+  text-shadow: 0 0 6px #00f7ff;
+  z-index: 1;
+}
+
+/* Time Spent Section */
+
+.time-circles {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.time-circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle-bg {
+  fill: none;
+  stroke: rgba(180, 80, 255, 0.15);
+  stroke-width: 6;
+}
+
+.progress-ring-circle {
+  fill: none;
+  stroke: #00d9ff;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 219.8;
+  stroke-dashoffset: calc(219.8 - (219.8 * var(--progress) / 60));
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.circle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.circle-goal {
+  font-size: 9px;
+  color: #888;
+}
+
+.circle-goal-time {
+  font-size: 11px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.time-label {
+  font-size: 11px;
+  color: #00d9ff;
+  font-weight: 600;
+}
+
+.time-period {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.overall-time {
+  text-align: center;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  color: #999;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.time-highlight {
+  color: #00d9ff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00d9ff;
+}
+
+/* Bottom Stats (Keyboard Coverage & Accuracy) */
+
+.bottom-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+  border-top: 1px solid rgba(160, 32, 240, 0.3);
+  padding-top: 12px;
+  margin-top: 5px;
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-divider {
+  width: 1px;
+  background: rgba(160, 32, 240, 0.3);
+  margin: 0 12px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+}
+
+.stat-value {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-value.positive {
+  color: #4dabf7;
+}
+
+.stat-value.negative {
+  color: #ff6b9d;
+}
+
+.stat-value .arrow {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stat-value .percentage {
+  font-size: 28px;
 }
 
 /* LEADERBOARD STYLING */
 
-.stats-title{
+.leaderboard-title{
   margin-bottom:20px;
   text-align:center;
   letter-spacing:3px;

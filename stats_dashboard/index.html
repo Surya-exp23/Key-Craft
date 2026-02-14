@@ -81,6 +81,112 @@
 
         <div class="stats_card">
 
+          <!-- Speed Section -->
+          <div class="stats-section speed-section">
+            <h3 class="section-title">Speed</h3>
+
+            <div class="speed-item current-speed">
+              <span class="speed-label">Current Speed</span>
+              <div class="speed-bar-container">
+                <div class="speed-bar-fill" style="width: 32%"></div>
+                <span class="speed-value">32 WPM</span>
+              </div>
+            </div>
+
+            <div class="speed-item">
+              <span class="speed-label">Last week</span>
+              <div class="speed-bar-container">
+                <div class="speed-bar-fill" style="width: 75%"></div>
+                <span class="speed-value">75 WPM</span>
+              </div>
+            </div>
+
+            <div class="speed-item">
+              <span class="speed-label">Last month</span>
+              <div class="speed-bar-container">
+                <div class="speed-bar-fill" style="width: 58%"></div>
+                <span class="speed-value">58 WPM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Time Spent Section -->
+          <div class="stats-section time-section">
+            <h3 class="section-title">Time Spent</h3>
+
+            <div class="time-circles">
+              <div class="time-circle-item">
+                <div class="circle-wrapper">
+                  <svg class="progress-ring" width="80" height="80">
+                    <circle class="progress-ring-circle-bg" cx="40" cy="40" r="35"></circle>
+                    <circle class="progress-ring-circle" cx="40" cy="40" r="35" style="--progress: 40"></circle>
+                  </svg>
+                  <div class="circle-content">
+                    <div class="circle-goal">Goal:</div>
+                    <div class="circle-goal-time">1 Hour</div>
+                  </div>
+                </div>
+                <div class="time-label">40 Minutes</div>
+                <div class="time-period">Last week</div>
+              </div>
+
+              <div class="time-circle-item">
+                <div class="circle-wrapper">
+                  <svg class="progress-ring" width="80" height="80">
+                    <circle class="progress-ring-circle-bg" cx="40" cy="40" r="35"></circle>
+                    <circle class="progress-ring-circle" cx="40" cy="40" r="35" style="--progress: 15"></circle>
+                  </svg>
+                  <div class="circle-content">
+                    <div class="circle-goal">Goal:</div>
+                    <div class="circle-goal-time">1 Hour</div>
+                  </div>
+                </div>
+                <div class="time-label">15 Minutes</div>
+                <div class="time-period">This week</div>
+              </div>
+
+              <div class="time-circle-item">
+                <div class="circle-wrapper">
+                  <svg class="progress-ring" width="80" height="80">
+                    <circle class="progress-ring-circle-bg" cx="40" cy="40" r="35"></circle>
+                    <circle class="progress-ring-circle" cx="40" cy="40" r="35" style="--progress: 10"></circle>
+                  </svg>
+                  <div class="circle-content">
+                    <div class="circle-goal">Goal:</div>
+                    <div class="circle-goal-time">15 Min</div>
+                  </div>
+                </div>
+                <div class="time-label">10 Minute</div>
+                <div class="time-period">Today</div>
+              </div>
+            </div>
+
+            <div class="overall-time">
+              Overall: <span class="time-highlight">13hr, 30min</span>
+            </div>
+          </div>
+
+          <!-- Keyboard Coverage & Accuracy -->
+          <div class="stats-section bottom-stats">
+            <div class="stat-item">
+              <div class="stat-label">Keyboard Coverage</div>
+              <div class="stat-value negative">
+                <span class="arrow">↓</span>
+                <span class="percentage">61%</span>
+              </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+              <div class="stat-label">Accuracy</div>
+              <div class="stat-value positive">
+                <span class="arrow">↑</span>
+                <span class="percentage">93%</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -88,7 +194,7 @@
       <!-- RIGHT PANEL -->
       <!-- leaderboard space  -->
       <div class="panel leaderboard-panel">
-        <h2 class="stats-title">Top Typists</h2>
+        <h2 class="leaderboard-title">Top Typists</h2>
 
         <div class="leaderboard">
 
