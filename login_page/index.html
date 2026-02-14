@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon"  type="image/png" href="./logo main.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   
+
 </head>
 <body>
 
@@ -17,7 +19,7 @@
 
             <div class="leftcontent">
 
-            <div class="leftheading"><img src="./logo main.png" alt=""><h2>KEYFRAFT</h2></div>
+            <div class="leftheading"><img src="./logo main.png" alt=""><h2>KEYCRAFT</h2></div>
 
             <div class="leftmain">
                 <div class="welcomeback"> WELCOME  BACK</div>
@@ -46,10 +48,12 @@
             </div>
 
         </div>
+
         
-
-
-        <div class="rightpart">
+    
+<div class="rightwrapper">
+ 
+          <div class="rightpart">
 
 
             <div class="rightlogin">
@@ -63,18 +67,21 @@
                 <div class="rightform">
                     <form action="" class="loginform">
 
-                        <label for="email">EMAIL:</label>
-                            <input type="email" name="" id="" placeholder="  you@example.com">
+                        <label for="loginemail" class="loginemail">EMAIL:</label>
+                        
                             
+                            <input type="email" name="" id="inputone" placeholder="you@example.com" required>
+                        
 
                         
-                            <label for="password">PASSWORD:</label>
-                            <input type="password" name="" id="" placeholder="enter password">
-
+                            <label for="password" class="loginpassword">PASSWORD:</label>
+                           
+                            <input type="password" name="" id="inputtwo" placeholder="enter password" required>
+                    
 
                        <div class="rememberme">
                         <div class="checkbox">
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="" required>
                             <p>Remember me</p>
                         </div>
                             <p> <span>Forgot password?</span> </p>
@@ -89,18 +96,83 @@
 
 
                 <div class="rightbottom">
-                    <p>Don't have an account?<a href="#"> Create one -></a></p> 
+                    <p>Don't have an account?<a href="#" id="toSignup"> Create one -></a></p> 
+                </div> 
+
+
+</div> 
+
+    </div>  
+
+
+
+                <!--SIGNUP PAGE -->
+
+
+                 <div class="rightpart2">
+
+
+                  <div class="rightsignup">
+
+                <div class="righttop">
+                    <div class="newaccount"><i class="fa-regular fa-star"></i>NEW ACCOUNT</div>
+                    <h2>Join the Community</h2>
+                    <p>Start improving your typing today 🚀</p>
+                </div>
+
+                <div class="rightform">
+                    <form action="" class="signupform">
+
+                        <div class="names">
+
+                            <div class="firstname">
+                            <label for="firstname">FIRST NAME:</label>
+                            <input type="text" placeholder="alex" required>
+                            </div>
+
+                            <div class="lastname">
+                            <label for="lastname">LAST NAME:</label>
+                            <input type="text" placeholder="johnson" required>
+                            </div>
+
+                        </div>
+
+
+                        <label for="email">EMAIL:</label>
+                            <input type="email" name="" id="" placeholder="you@example.com" required>
+                        
+                        
+                            <label for="password">PASSWORD:</label>
+                            <input type="password" name="" id="" placeholder="enter password" required>
+
+
+                       
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="" required>
+                            <p>I Agree to the  </p>
+    
+                            <p> <span> Terms & Policies</span> </p>
+                        </div>
+                            <button type="submit"><b>Create Account</b></button>
+
+                    </form>
+                </div>
+
+
+                <div class="rightbottom">
+                    <p>Already have an Account <a href="#" id="toLogin">  <- Sign in</a></p> 
                 </div>
 
 
 
+                </div>
+
+
             </div>
 
+</div>
 
-        </div>
-
-
-    </div>
+            <script src="script.js"></script> 
 
 </body>
 </html>
