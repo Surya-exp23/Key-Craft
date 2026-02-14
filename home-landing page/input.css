@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&family=Share+Tech&family=Uncial+Antiqua&display=swap');
 @import "tailwindcss";
 @tailwind utilities;
 
+
+html {
+    scroll-behavior: smooth;
+}
 
 @theme {
   --font-roboto: "Roboto", sans-serif;
@@ -11,6 +15,7 @@
   --font-pixelify: "Pixelify Sans", sans-serif;
   --font-sharetech: "Share Tech", sans-serif;
   --font-newrocker: "New Rocker", cursive;
+  --font-uncial: "Uncial Antiqua", cursive;
 }
 
 
@@ -74,4 +79,22 @@
 
 .moving {
   animation: move 3s linear infinite;
+}
+
+
+.scroll-container {
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scroll-container:hover {
+    animation-play-state: paused;
 }
