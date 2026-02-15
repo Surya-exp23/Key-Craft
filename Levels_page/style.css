@@ -13,20 +13,26 @@ body{
     color: aliceblue;
 }
 
+
+
+
+
 /*   section1   */
+
+
+
+
 
 .section1 {
     height: 115vh;
     width: 100vw;
     margin: 0px;
-    /* background-color: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section1inside {
-    /* background-color: #a75656; */
     height: 80%;
     width: 89%;
 
@@ -34,7 +40,6 @@ body{
 }
 
 .section1top {
-    /* background-color: #db1f1f; */
     display: flex;
     justify-content: space-between;
 
@@ -42,7 +47,6 @@ body{
 
 
 .section1topleft {
-    /* background-color: #cbbcbc; */
     display: flex;
     flex-direction: column;
 
@@ -50,7 +54,6 @@ body{
 }
 
 .section1topleft #pone {
-    /* background-color: #8ed741; */
     margin-bottom: 7px;
     font-size: 16px;
     color:#937bbc;
@@ -62,7 +65,6 @@ body{
 }
 
 .section1topleft #ptwo {
-    /* background-color: #8ed741; */
     margin-top: 7px;
     font-size: 16px;
     font-weight: 400;
@@ -70,7 +72,6 @@ body{
 }
 
 .section1topleft h1 {
-    /* background-color: #2ae43a; */
     font-size: 45px;
     margin: 0%;
 }
@@ -93,7 +94,7 @@ body{
 
 
 .section1progress {
-    /* background-color: #2d1111; */
+    
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -120,7 +121,7 @@ body{
 }
 
 .section1grid {
-    /* background-color: #bdb4b4; */
+
     height: 74%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -230,4 +231,323 @@ body{
 
 .section1 a {
     text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*    section2  */
+
+
+
+
+
+
+
+.section2 {
+    height: 115vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2inside {
+    height: 80%;
+    width: 89%;
+
+
+}
+
+.section2top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.section2topleft {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.section2topleft #pone {
+    margin-bottom: 7px;
+    font-size: 16px;
+    color:#937bbc;
+    font-size: 12px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    color: #7c3aed;
+    
+}
+
+.section2topleft #ptwo {
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(241, 245, 249, 0.6);
+}
+
+.section2topleft h1 {
+    font-size: 45px;
+    margin: 0%;
+}
+
+.section2topright {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: #7c3aed26;
+    box-shadow: 0px 0px 15px #7c3aed26 ;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 50px;
+    border-radius: 50px;
+    color: #7c3aed;
+    font-weight: 400;
+
+}
+
+
+.section2progress {
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 15px;
+    height: 5%;
+}
+
+.section2progress p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section2progress progress {
+     width: 88%;
+    -webkit-appearance: none;
+     appearance: none;
+     height: 5px;
+     
+}
+
+
+.section1progress progress::-webkit-progress-value {
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+}
+
+.section2grid {
+
+    height: 74%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+.section2grid #locked {
+    background: linear-gradient(160deg, #1a0433 75%, #0b011a 100%);
+    border: 1px solid rgba(124,58,237,0.15);
+    color: aliceblue;
+    border-radius: 15px;
+
+}
+
+.section2grid #locked .cardtop{
+    padding-left: 15px;
+    color: rgba(241,245,249,0.25)
+}
+
+.section2grid #locked .cardmain{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50%
+
+}
+
+
+.section2grid #locked .cardbottom{
+    font-size: 15px;
+    color: rgba(241,245,249,0.25);
+    padding-left: 15px;
+}
+
+
+
+
+
+
+/* SECTION 3 */
+
+
+
+
+
+.section3 {
+    height: 115vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3inside {
+    height: 80%;
+    width: 89%;
+
+
+}
+
+.section3top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.section3topleft {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.section3topleft #pone {
+    margin-bottom: 7px;
+    font-size: 16px;
+    color:#937bbc;
+    font-size: 12px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    color: #7c3aed;
+    
+}
+
+.section3topleft #ptwo {
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(241, 245, 249, 0.6);
+}
+
+.section3topleft h1 {
+    font-size: 45px;
+    margin: 0%;
+}
+
+.section3topright {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: #7c3aed26;
+    box-shadow: 0px 0px 15px #7c3aed26 ;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 50px;
+    border-radius: 50px;
+    color: #7c3aed;
+    font-weight: 400;
+
+}
+
+
+.section3progress {
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 15px;
+    height: 5%;
+}
+
+.section3progress p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section3progress progress {
+     width: 88%;
+    -webkit-appearance: none;
+     appearance: none;
+     height: 5px;
+     
+}
+
+
+.section3progress progress::-webkit-progress-value {
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+}
+
+.section3grid {
+
+    height: 74%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+
+
+.section3grid #locked {
+    background: linear-gradient(160deg, #1a0433 75%, #0b011a 100%);
+    border: 1px solid rgba(124,58,237,0.15);
+    color: aliceblue;
+    border-radius: 15px;
+
+}
+
+.section3grid #locked .cardtop{
+    padding-left: 15px;
+    color: rgba(241,245,249,0.25)
+}
+
+.section3grid #locked .cardmain{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50%
+
+}
+
+
+.section3grid #locked .cardbottom{
+    font-size: 15px;
+    color: rgba(241,245,249,0.25);
+    padding-left: 15px;
+}
+
+
+
+
+
+/* 
+hr */
+
+
+
+hr {
+    width: 98%;
 }
