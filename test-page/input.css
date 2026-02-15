@@ -15,7 +15,7 @@
 }
 
 
-/* animation for blinking cursor */
+
 .cursor-blink {
     animation: blink 1s infinite;
 }
@@ -26,6 +26,9 @@
     51%, 100% { opacity: 0; }
 }
 
+
+
+
 .word {
     display: inline-block;
     margin-right: 8px;
@@ -35,10 +38,13 @@
 
 
 
+
+
 .char {
     position: relative;
         
 }
+
 
 
 
@@ -59,6 +65,8 @@
     background-color: rgba(167, 139, 250, 0.2);
     border-left: 2px solid #a78bfa;
 }
+
+
 
 
 
