@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Pixelify+Sans:wght@400..700&family=Poppins:wght@300;400;500;600&family=Share+Tech&family=Uncial+Antiqua&display=swap');
+@import "tailwindcss";
+@tailwind utilities;
+
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-boldonse: "Boldonse", sans-serif;
+  --font-pixelify: "Pixelify Sans", sans-serif;
+  --font-sharetech: "Share Tech", sans-serif;
+  --font-newrocker: "New Rocker", cursive;
+  --font-uncial: "Uncial Antiqua", cursive;
+}
+
+
+/* animation for blinking cursor */
+.cursor-blink {
+    animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.word {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+
+.char {
+    position: relative;
+        
+}
+
+
+
+.char.correct {
+    color: #a78bfa;
+}
+
+
+
+.char.incorrect {
+    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+
+
+.char.current {
+    background-color: rgba(167, 139, 250, 0.2);
+    border-left: 2px solid #a78bfa;
+}
+
+
+
+textarea:focus {
+    outline: none;
+
+}
+
+
+
+.progress-ring {
+    transform: rotate(-90deg);
+
+
+}
+
+
+.progress-ring-circle {
+    transition: stroke-dashoffset 0.35s;
+    transform-origin: 50% 50%;
+
+}
