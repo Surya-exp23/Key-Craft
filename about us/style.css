@@ -6,11 +6,7 @@
 
 body{
     font-family:'Montserrat',sans-serif;
-    background: radial-gradient(circle at 20% 30%, #0f1e3c 0%, #0b0f25 40%),
-                radial-gradient(circle at 80% 70%, #2a0a4f 0%, #0b0f25 50%);
-                background: linear-gradient(120deg, #0b0f25, #1c093a, #2a0a4f);
-
-    background-color: #0b0f25;
+    background-color: #000;
     color:white;
 }
 
