@@ -19,18 +19,21 @@
     <!-- main container where we work mainly -->
     <div class="container mx-auto px-8 py-18 max-w-6xl">
         
+
         <!-- bar in which time and word is stylylised -->
         <div id="optionsBar" class="flex justify-center mb-8">
 
+
+            
             <div class="  bg-black/90 rounded-2xl p-2 inline-flex items-center gap-6 flex-wrap">
                 
 
                 <!-- will work(styling) on this later -->
                 <div class="flex items-center gap-6 font-pixelify">
-                    <button onclick="setMode('time')" id="modeTime" class="mode-btn px-4 py-2 rounded-2xl text-white font-semibold transition-all duration-300 bg-purple-600/50">
+                    <button onclick="setMode('time')" id="modeTime" class="mode-btn px-4 py-2 rounded-2xl text-white font-semibold transition-all duration-300 bg-purple-600/50 cursor-pointer">
                         <i class="ri-time-line mr-1"></i>time
                     </button>
-                    <button onclick="setMode('words')" id="modeWords" class="mode-btn px-4 py-2 rounded-2xl text-gray-400 font-semibold hover:text-white transition-all duration-300">
+                    <button onclick="setMode('words')" id="modeWords" class="mode-btn px-4 py-2 rounded-2xl text-gray-400 font-semibold hover:text-white transition-all duration-300 cursor-pointer">
                         <i class="ri-text mr-1"></i>words
                     </button>
                 </div>
@@ -38,6 +41,8 @@
 
                 <!-- seperation line -->
                 <div class="h-6 w-px bg-purple-500/30"></div>
+
+
 
                 <!-- Time Options can be reworked -->
                 <div id="timeOptions" class="flex items-center gap-2 font-bold">
@@ -47,23 +52,27 @@
                     <button onclick="selectDuration(120)" class="option-btn px-4 py-2 rounded-2xl text-gray-400 hover:text-white transition-all duration-300 cursor-pointer">120</button>
                 </div>
 
+
+
                 <!-- hidden portion -->
                 <div id="wordOptions" class="hidden flex items-center gap-2">
-                    <button onclick="selectWords(10)" class="option-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white font-bold transition-all duration-300">10</button>
-                    <button onclick="selectWords(25)" class="option-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white font-bold transition-all duration-300 bg-purple-600/50 text-white">25</button>
-                    <button onclick="selectWords(50)" class="option-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white font-bold transition-all duration-300">50</button>
-                    <button onclick="selectWords(100)" class="option-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white font-bold transition-all duration-300">100</button>
+                    <button onclick="selectWords(10)" class="option-btn px-4 py-2 rounded-2xl text-gray-400 hover:text-white font-bold transition-all duration-300 cursor-pointer">10</button>
+                    <button onclick="selectWords(25)" class="option-btn px-4 py-2 rounded-2xl text-gray-400 hover:text-white font-bold transition-all duration-300 bg-purple-600/50 text-white cursor-pointer">25</button>
+                    <button onclick="selectWords(50)" class="option-btn px-4 py-2 rounded-2xl text-gray-400 hover:text-white font-bold transition-all duration-300 cursor-pointer">50</button>
+                    <button onclick="selectWords(100)" class="option-btn px-4 py-2 rounded-2xl text-gray-400 hover:text-white font-bold transition-all duration-300 cursor-pointer">100</button>
                 </div>
 
                 <!-- speration line again -->
                 <div class="h-6 w-px bg-purple-500/30"></div>
 
                 <!-- Restart Button -->
-                <button onclick="restartTest()" class="px-4 py-2 rounded-lg text-gray-400 hover:text-white transition-all duration-300">
+                <button onclick="restartTest()" class="px-4 py-2 rounded-lg text-gray-400 hover:text-white transition-all duration-300 cursor-pointer">
                     <i class="ri-restart-line text-xl"></i>
                 </button>
             </div>
         </div>
+
+
 
         <!-- Test Screen -->
         <div id="testScreen">
@@ -72,13 +81,17 @@
                 <div id="timer" class="text-3xl font-bold text-gray-400">0:00</div>
             </div>
 
+
+
             <!-- Text Display Area -->
             <div class=" border  rounded-3xl p-12 mb-6 border-[#3f3f3f]">
                 <div id="textDisplay" class="text-gray-500 text-2xl leading-relaxed select-none overflow-y-auto max-h-64 mb-6 text-center">
-                    <!-- here we will generate the text -->
+                    
                     Click here or start typing to begin the test
                 </div>
                 
+
+
                 <!--text area where we will type -->
                 <textarea 
                     id="typingInput" 
@@ -88,6 +101,8 @@
                 ></textarea>
             </div>
 
+
+
             <div class="text-center hidden" id="restartBtn">
                 <button onclick="restartTest()" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300">
                     <i class="ri-restart-line mr-2"></i>Restart Test
@@ -95,38 +110,77 @@
             </div>
         </div>
 
+
+
+
         <!-- Results Screen -->
         <div id="resultsScreen" class="hidden">
-            <div class="bg-gradient-to-br from-purple-900/40 to-black border border-purple-500/30 rounded-3xl p-12 max-w-3xl mx-auto">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white mb-6">Test Complete!</h2>
+    <div class="bg-[#1a1a1a] border border-[#3f3f3f] rounded-3xl p-12 max-w-5xl mx-auto backdrop-blur-2xl">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <!-- LEFT SIDE - IMAGE -->
+            <div class="flex items-center justify-center">
+                <img 
+                    src="../home-landing page/assests/monkeyconfi12.png" 
+                    alt="Success" 
+                    class="w-full max-w-md object-contain"
+                />
+            </div>
+
+
+
+
+            <!-- RIGHT SIDE - RESULTS -->
+            <div class="space-y-8">
+                <div class="text-center md:text-left">
+                    <h2 class="text-5xl font-extrabold  mb-2 bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent">Well done!</h2>
+                    <p class="text-gray-400 text-lg">Test Complete</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div class="bg-white/5 border border-purple-500/20 rounded-2xl p-8 text-center">
-                        <div class="text-gray-400 text-sm uppercase tracking-wide mb-3">WPM</div>
-                        <div id="finalWPM" class="text-5xl font-bold text-purple-400">0</div>
+
+
+
+                <!-- Stats box (can make changes) -->
+                <div class="space-y-6">
+                   
+
+                    <div class="flex items-baseline gap-4">
+                        <div class="text-gray-400 text-sm uppercase tracking-wide min-w-[100px]">WPM</div>
+                        <div id="finalWPM" class="text-3xl font-semibold text-white font-poppins">0</div>
                     </div>
-                    <div class="bg-white/5 border border-purple-500/20 rounded-2xl p-8 text-center">
-                        <div class="text-gray-400 text-sm uppercase tracking-wide mb-3">Accuracy</div>
-                        <div id="finalAccuracy" class="text-5xl font-bold text-green-400">0%</div>
+                    
+
+
+                    
+                    <div class="flex items-baseline gap-4">
+                        <div class="text-gray-400 text-sm uppercase tracking-wide min-w-[100px]">Accuracy</div>
+                        <div id="finalAccuracy" class="text-3xl font-semibold text-green-400 font-poppins">0%</div>
                     </div>
-                    <div class="bg-white/5 border border-purple-500/20 rounded-2xl p-8 text-center">
-                        <div class="text-gray-400 text-sm uppercase tracking-wide mb-3">Errors</div>
-                        <div id="finalErrors" class="text-5xl font-bold text-red-400">0</div>
+                    
+
+
+                    
+                    <div class="flex items-baseline gap-4">
+                        <div class="text-gray-400 text-sm uppercase tracking-wide min-w-[100px]">Errors</div>
+                        <div id="finalErrors" class="text-3xl font-semibold text-red-400 font-poppins">0</div>
                     </div>
                 </div>
 
-                <div class="flex gap-4 justify-center">
-                    <button onclick="restartTest()" class="bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300">
+                
+                <div class="flex gap-4 pt-4">
+                    <button onclick="restartTest()" class="bg-purple-600 hover:-translate-y-1 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 cursor-pointer">
                         <i class="ri-restart-line mr-2"></i>Try Again
                     </button>
-                    <a href="index.html" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 inline-block">
+                    <a href="../stats_dashboard/index.html" class="bg-white/10 hover:-translate-y-1 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 inline-block">
                         <i class="ri-home-line mr-2"></i>Back Home
                     </a>
                 </div>
             </div>
+
         </div>
+    </div>
+</div>
 
     </div>
 
