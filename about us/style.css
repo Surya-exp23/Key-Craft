@@ -156,3 +156,25 @@ nav a:hover{
     margin-bottom:15px;
 }
 
+/* Social Buttons */
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.social-links a{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    text-decoration:none;
+    background:#1e293b;
+    color:white;
+    border:1px solid #00eaff;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background:#00eaff;
+    color:black;
+}
