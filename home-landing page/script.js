@@ -74,3 +74,38 @@ const scrollup = () => {
 }
 
 window.addEventListener('scroll', scrollup);
+
+
+// scrolling animation
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 300,
+  reset: true
+})
+
+
+sr.reveal(`.headdata`)
+sr.reveal(`.qoute12`,{delay: 400})
+
+
+sr.reveal(`.year23`,{delay: 600})
+
+sr.reveal(`.headtext12`)
+sr.reveal(`.headimg12`,{delay: 400})
+
+sr.reveal(`.dropdown-item`,{interval: 100})
+
+
+sr.reveal(`.keyimg`,{scale: 0.85})
+sr.reveal(`.ability12`,{interval: 100})
+
+sr.reveal(`.levelup12`)
+
+
+
+sr.reveal(`.review12`)
+sr.reveal(`.revcard12`,{delay:400,interval: 100})
+

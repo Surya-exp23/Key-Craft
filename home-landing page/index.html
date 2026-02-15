@@ -37,7 +37,7 @@
         <section id="home" class="h-screen w-full relative flex items-center justify-center overflow-hidden">
     
             <!-- VIDEO BACKGROUND -->
-            <video 
+            <!-- <video 
                 class="absolute top-0 left-0 w-full h-full object-cover z-[1]" 
                 autoplay 
                 muted 
@@ -46,9 +46,15 @@
             >
                 <source src="assests/video-bg.mp4" type="video/mp4">
                 
-            </video>
+            </video> -->
 
-            <!-- overlay to dark the image  -->
+            <img 
+            src="assests/Screenshot (42).png" 
+            alt="Background" 
+            class="absolute top-0 left-0 w-full h-full object-cover z-[1]"
+            />
+
+            <!-- overlay to dark or blur the video  -->
             <div class="absolute top-0 left-0 w-full h-full bg-black/30 z-[2]"></div>
 
             
@@ -67,14 +73,14 @@
           </div>
 
         <!-- MAIN TITLE -->
-         <h1 class="text-center font-black leading-[0.9] text-[clamp(30px,8vw,110px)] tracking-tighter bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent px-4">
+         <h1 class="headdata text-center font-black leading-[0.9] text-[clamp(30px,8vw,110px)] tracking-tighter bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent px-4">
              Your ideas Deserve
         </h1>
-        <h1 class="text-center font-black leading-[0.9] text-[clamp(30px,8vw,110px)] tracking-tighter bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent px-4">
+        <h1 class="headdata text-center font-black leading-[0.9] text-[clamp(30px,8vw,110px)] tracking-tighter bg-gradient-to-b from-white/95 via-white/95 to-purple-500/90 bg-clip-text text-transparent px-4">
              Faster Fingers.
         </h1>
         
-        <div class="text-white text-xl mt-12 flex">
+        <div class="qoute12  text-white text-xl mt-12 flex">
           <div>Treat typing as a skill worth improving,<br>
         not just another chore to get through.</div>
           <i class="ri-double-quotes-r ml-auto text-4xl"></i>
@@ -102,7 +108,7 @@
                     <span>LOGIN <span class="font-light text-sm">(existing user)</span></span>
                     <i class="ri-arrow-right-line"></i>
                     </a>
-                    <a href="#" 
+                    <a href="../stats_dashboard/index.html" 
                     target="_blank"
                     class="w-full max-w-[250px] px-[18px] py-[14px] rounded-[12px] border-none bg-white/95 text-sm cursor-pointer transition-all duration-300 hover:bg-white/95 hover:translate-x-[5px] font-bold font-montserrat flex items-center justify-between ">
                     <span>GUEST USER</span>
@@ -123,14 +129,24 @@
           <img src="assests/mascut.png" alt="Monkey Mascot" class="h-[65vh] max-h-[600px] md:h-[70vh] md:max-h-[700px] object-contain"/> </div>
 
             
-            <div class="absolute bottom-[40px] right-[20px] md:right-[40px] text-right text-white z-[12] flex flex-col items-end gap-1">
+            <div class="year23 absolute bottom-[40px] right-[20px] md:right-[40px] text-right text-white z-[12] flex flex-col items-end gap-1">
             <img 
             src="assests/year-2026.png" 
             alt="2026" 
-            class="h-16 md:h-32 lg:h-18 w-auto object-contain" />
-            <p class="text-sm md:text-base font-bold tracking-wide font-poppins">YEAR WHERE SPEED MATTERS!</p>
+            class="h-12 md:h-28 lg:h-15 w-auto object-contain" />
+            <p class="text-sm md:text-base tracking-wide font-poppins">YEAR WHERE SPEED MATTERS!</p>
             </div>
             
+
+
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[15] flex flex-col items-center gap-2 cursor-pointer group">
+                <!-- <span class="text-white text-sm font-semibold tracking-wider uppercase opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                
+                </span> -->
+                <div class="animate-bounce">
+                    <i class="ri-arrow-down-s-line text-white text-3xl opacity-80 group-hover:opacity-100 group-hover:text-purple-400 transition-all duration-300"></i>
+                </div>
+            </div>
         </section>
 
 
@@ -146,7 +162,7 @@
         <div class="relative z-10 max-w-6xl">
             <!-- heading -->
             <div class="relative mb-12">
-                <h1 class="text-[clamp(30px,8vw,110px)] leading-23 font-extrabold text-white">
+                <h1 class="headtext12 text-[clamp(30px,8vw,110px)] leading-23 font-extrabold text-white">
                     MASTER THE ART OF <br>
                     <span class="bg-gradient-to-b from-white/95 to-purple-700 bg-clip-text text-transparent">FAST</span> & 
                     <span class="bg-gradient-to-b from-white/95 to-purple-700 bg-clip-text text-transparent">ACCURATE</span> <br>
@@ -230,10 +246,10 @@
               w-full grid grid-cols-1 gap-8 
               md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
            <div class="moving">
-          <img src="assests/keyboardart1.png" alt="keyboardimage">
+          <img src="assests/keyboardart1.png" alt="keyboardimage" class="keyimg">
           </div>
           <!-- card 1-->
-           <div class="service_card  border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#a000fc] hover:translate-y-1 duration-300 space-y-5 font-poppins">
+           <div class="ability12  border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#a000fc] hover:translate-y-1 duration-300 space-y-5 font-poppins">
             <div class="flex items-center gap-5">
               
               <i class="ri-dashboard-2-line text-3xl md:text-4xl"></i>
@@ -248,7 +264,7 @@
            </div>
 
            <!-- card 2-->
-           <div class="service_card border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#a000fc] hover:translate-y-1 duration-300 space-y-5 font-poppins">
+           <div class="ability12 border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#a000fc] hover:translate-y-1 duration-300 space-y-5 font-poppins">
             <div class="flex items-center gap-5 ">
               <i class="ri-bar-chart-box-ai-line text-3xl md:text-4xl"></i>
               <p class="md:text-lg font-bold">
@@ -264,7 +280,7 @@
            
 
            <!-- card 3-->
-           <div class="service_card border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#a000fc] hover:translate-y-1 duration-300 space-y-5 font-poppins">
+           <div class="ability12 border border-[#a000fc] p-5 cursor-pointer rounded-2xl hover:shadow-[0_2px_8px_#a000fc] hover:translate-y-1 duration-300 space-y-5 font-poppins">
             <div class="flex items-center gap-5">
               
               <i class="ri-stairs-line text-3xl md:text-4xl"></i>
@@ -285,7 +301,7 @@
     <div class="container mx-auto max-w-7xl ">
         
         <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-7xl font-extrabold text-white mb-4">
+            <h2 class="levelup12 text-4xl md:text-7xl font-extrabold text-white mb-4">
                 WHY TO <span class="bg-gradient-to-b from-white/95  to-purple-500/90 bg-clip-text text-transparent">LEVEL UP</span>  SPEED!
             </h2>
             <p class="bg-gradient-to-b from-white/95 via-white/95 to-purple-400/90 bg-clip-text text-transparent text-lg ">
@@ -348,8 +364,8 @@
     <div class="container mx-auto max-w-7xl">
         <!-- Heading and Subheading -->
         <div class="text-center mb-12">
-            <h2 class="text-5xl md:text-7xl font-bold bg-gradient-to-b from-white/95  to-purple-500/90 bg-clip-text text-transparent mb-4 ">
-                Reviews
+            <h2 class="review12 text-5xl md:text-7xl font-extrabold bg-gradient-to-b from-white/95  to-purple-500/90 bg-clip-text text-transparent mb-4 ">
+                REVIEWS
             </h2>
             <p class="text-gray-400 text-lg tracking-wider">
                 What users say about improvement and speed
@@ -369,7 +385,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <!--  Card 1 -->
-                <div class="bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
+                <div class="revcard12 bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
                     <div class="flex items-center mb-3">
                         <div class="flex text-yellow-400 text-sm">
                             ★★★★★
@@ -390,7 +406,7 @@
                 </div>
 
                 <!-- Review Card 2 -->
-                <div class="bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
+                <div class="revcard12 bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
                     <div class="flex items-center mb-3">
                         <div class="flex text-yellow-400 text-sm">
                             ★★★★★
@@ -411,7 +427,7 @@
                 </div>
 
                 <!--  Card 3 -->
-                <div class="bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
+                <div class="revcard12 bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
                     <div class="flex items-center mb-3">
                         <div class="flex text-yellow-400 text-sm">
                             ★★★★☆
@@ -432,7 +448,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
+                <div class="revcard12 bg-gradient-to-br from-purple-900/20 to-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/40 transition-all duration-300">
                     <div class="flex items-center mb-3">
                         <div class="flex text-yellow-400 text-sm">
                             ★★★★★
@@ -553,6 +569,8 @@
 
 
 
+    <!-- this is free avilable js library for animating things-->
+    <script src="assests/js/scrollreveal.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
