@@ -314,8 +314,7 @@ body{
     width: 50px;
     border-radius: 50px;
     color: #7c3aed;
-    font-weight: 400;
-
+    font-weight: 300;
 }
 
 
@@ -540,14 +539,14 @@ body{
 }
 
 
-
-
-
-/* 
-hr */
-
-
+ 
+  /*  hr */
 
 hr {
     width: 98%;
+}
+
+
+#locked:hover{
+    cursor: pointer;
 }
