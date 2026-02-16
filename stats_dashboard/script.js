@@ -81,3 +81,14 @@
 // animate();
 
 // // space particles background
+
+
+
+document.getElementById("page2test").addEventListener("click", function () {
+    window.location.href = "../test-page/index.html";
+});
+
+
+document.getElementById("page2pracice").addEventListener("click", function () {
+    window.location.href = "../Levels_page/index.html";
+});

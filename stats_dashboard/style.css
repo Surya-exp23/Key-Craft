@@ -94,7 +94,7 @@ a.parallelogram span {
 /* HOVER */
 
 a.parallelogram:hover {
-  background: #9615ff;
+  /* background: #9615ff; */
   color: #fff;
   text-decoration: underline;
 
@@ -194,7 +194,8 @@ img {
 
 
 .start_card .card-body .card-title{
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Uncial Antiqua", system-ui;
+  /* font-family: "Pixelify Sans", sans-serif; */
   font-size: 32px;
   color:#ffffff;
 
@@ -222,12 +223,13 @@ img {
 .start_card .card-body .start_card-footer .start-btn{
   width: 100%;
   margin: 0;
+  font-family: "Pixelify Sans", sans-serif;
   padding: 10px 20px;
   font-weight: 600;
   font-size: 18px;
   background:#ffffff;
   color:#8700b8;
-  box-shadow:0 0 12px #490074;
+  /* box-shadow:0 0 12px #bb46ff; */
   display:inline-block;
   transform: none;
   border:1px solid transparent;
@@ -246,7 +248,8 @@ img {
 }
 
 .start_card .card-body .start_card-footer .Take_Test{
-  background-color: rgb(162, 0, 221);
+  
+  background-color: rgb(191, 15, 255);
   color: #fff;
 }
 
@@ -279,7 +282,7 @@ img {
 .progress-fill{
   height:100%;
   width:20%;
-  background:#5b0094;
+  background:#ac26ff;
   border-radius:50px;
   transition:width 0.4s ease;
 }
@@ -590,7 +593,7 @@ img {
 
 .leaderboard-item:hover{
   transform:translateX(6px);
-  border-color:#b026ff;
+  border-color:#a200ffb0;
   box-shadow:0 0 15px rgba(176,38,255,0.4);
 }
 
