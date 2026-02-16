@@ -28,35 +28,37 @@
     <h1 class="heading"><span>Contact Us</span> </h1>
 
 <div class="div1">
-  <form action="">
+
+    <form onsubmit="showToast(event)">
+
 
   
  <div class="row">
 
   <div class="input-group">
-     <input type="text" placeholder="First name" class="box">
+     <input type="text" placeholder="First name" class="box" required>
      <i class="fas fa-user"></i>
   </div>
 
   <div class="input-group">
-     <input type="text" placeholder="Last name" class="box">
+     <input type="text" placeholder="Last name" class="box"required>
      <i class="fas fa-user"></i>
   </div>
 
 </div>
 
 <div class="input-group">
-   <input type="email" placeholder="Email" class="box">
+   <input type="email" placeholder="Email" class="box"required>
    <i class="fas fa-envelope"></i>
 </div>
 
 <div class="input-group">
-   <input type="number" placeholder="Phone No." class="box">
+   <input type="number" placeholder="Phone No." class="box"required>
    <i class="fas fa-phone"></i>
 </div>
 
    <div class="input-group">
-   <textarea class="box" placeholder="Message"></textarea>
+   <textarea class="box" placeholder="Message"required></textarea>
    <i class="fas fa-comment-dots"></i>
 </div>
 
@@ -74,32 +76,56 @@
   </form>
 </div>
 
-  
+</section> 
 
- <div class="div2">
-        <h2>Contact Info</h2>
-        <div class="info">
-            <i class="fas fa-envelope"></i>
-            <span>support@typingclub.com</span>
-        </div>
 
-        <div class="info">
-            <i class="fas fa-phone"></i>
-            <span>+91 9829354070</span>
-        </div>
 
-        <div class="info">
-            <i class="fas fa-location-dot"></i>
-            <span>Jaipur, Rajasthan</span>
-        </div>
+
+<footer class="footer">
+  <div class="div2">
+    <h2>Contact Info</h2>
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <span>support@typingclub.com</span>
     </div>
 
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <span>+91 9829354070</span>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-location-dot"></i>
+        <span>Jaipur, Rajasthan</span>
+    </div>
+  </div>
+
+  <p class="copyright">
+    © 2026 Typing Club. All rights reserved.
+  </p>
+</footer>
 
 
 
-</section>
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <span>Message sent successfully!</span>
+</div>
 
+<script>
+function showToast(e){
+  e.preventDefault(); 
 
+  const toast = document.getElementById("toast");
+  toast.classList.add("show");
+
+  document.querySelector("form").reset(); 
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000); //
+}
+</script>
 
 </body>
 </html>
