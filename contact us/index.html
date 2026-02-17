@@ -64,9 +64,57 @@
 
  
     <div class="btn-row">
-   <button class="attach">
-   <i class="fa-solid fa-paperclip"></i> Add attachment
+ 
+
+<button type="button" class="attach" onclick="document.getElementById('fileInput').click()">
+  <i class="fa-solid fa-paperclip"></i> Add attachment
 </button>
+<input type="file" id="fileInput" style="display:none" />
+<div id="fileName" class="file-name"></div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const fileInput = document.getElementById("fileInput");
+  const fileName = document.getElementById("fileName");
+  const form = document.querySelector("form");
+  const toast = document.getElementById("toast");
+
+  fileInput.addEventListener("change", function () {
+    if (this.files && this.files.length > 0) {
+      fileName.textContent = this.files[0].name; 
+    } else {
+      fileName.textContent = "";
+    }
+  });
+
+  window.showToast = function (e) {
+    e.preventDefault();
+
+    toast.classList.add("show");
+
+    form.reset();
+
+   
+    fileInput.value = "";
+    fileName.textContent = "";
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  };
+});
+</script>
+
+
+
+
+
+
+
+
+
 
  <button class="send" type="submit">Send message</button>
 
@@ -75,10 +123,6 @@
  
   </form>
 </div>
-
-</section> 
-
-
 
 
 <footer class="footer">

@@ -145,7 +145,13 @@ textarea.box{
     justify-content:space-between;
     gap:20px;
 }
-
+.file-name{
+  margin-top: 6px;
+  font-size: 13px;
+  color:#8c8291;
+  display: block;   
+  min-height: 16px; 
+}
 
 .attach{
     flex:1;
