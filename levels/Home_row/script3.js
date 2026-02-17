@@ -1,4 +1,3 @@
-// Lesson text for Level 1 (F and J keys with spaces)
 const lessonText = "ll ss ssll slsl lsssl slls lsll ssl llss ssll slsl llsslsll ssl ssll slsl lsll";
 
 let currentIndex = 0;
@@ -151,7 +150,7 @@ function nextLesson() {
     const nextLevelPath = "";
 
     if (!nextLevelPath || nextLevelPath.trim() === "") {
-        alert("Next level not available yet 🚧");
+        alert("🚀 Coming Soon! More levels are on the way.");
         return;
     }
 

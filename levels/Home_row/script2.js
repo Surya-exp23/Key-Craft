@@ -1,4 +1,3 @@
-// Lesson text for Level 1 (F and J keys with spaces)
 const lessonText = "dd kk dk dk kd kd ddd kkd ddk dkk kkdd ddkk dddd kkkk ddkk kkdd kdd kddd dk kk";
 
 let currentIndex = 0;

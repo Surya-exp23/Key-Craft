@@ -184,7 +184,7 @@ header {
 
 .finger.active {
     transform: translateY(-10px);
-    filter: drop-shadow(0 8px 20px currentColor);
+    /* filter: drop-shadow(0 8px 20px currentColor); */
 }
 
 .finger.active-pinky {
@@ -211,7 +211,7 @@ header {
 .thumb.active {
     fill: var(--primary-purple);
     transform: translateY(-10px);
-    filter: drop-shadow(0 8px 20px var(--primary-purple));
+    /* filter: drop-shadow(0 8px 20px var(--primary-purple)); */
 }
 
 .instruction {
