@@ -14,11 +14,11 @@ toLogin.addEventListener("click", (e) => {
 });
 
 
-document.getElementById("loginid12").addEventListener("click", function () {
-    window.location.href = "../stats_dashboard/index.html";
-});
+// document.getElementById("loginid12").addEventListener("click", function () {
+//     window.location.href = "../stats_dashboard/index.html";
+// });
 
 
-document.getElementById("createacc12").addEventListener("click", function () {
-    window.location.href = "../stats_dashboard/index.html";
-});
+// document.getElementById("createacc12").addEventListener("click", function () {
+//     window.location.href = "../stats_dashboard/index.html";
+// });
