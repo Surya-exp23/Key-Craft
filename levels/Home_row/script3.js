@@ -1,4 +1,4 @@
-const lessonText = "ll ss ssll slsl lsssl slls lsll ssl llss ssll slsl llsslsll ssl ssll slsl lsll";
+const lessonText = "ffff ddd jjjj kkkk df df jk jk jjj fff ddff jjkk kkdd fdfd jkjk dfjk kkdd jkjk dfdf dfjj jjfd kkjj";
 
 let currentIndex = 0;
 let correctChars = 0;
@@ -12,6 +12,10 @@ const modalOverlay = document.getElementById('modalOverlay');
 
 // Finger mapping with color classes
 const fingerMap = {
+    'f': { id: 'leftIndex', colorClass: 'active-index' },
+    'j': { id: 'rightIndex', colorClass: 'active-index' },
+    'd': { id: 'leftMiddle', colorClass: 'active-middle' },
+    'k': { id: 'rightMiddle', colorClass: 'active-middle' },
     's': { id: 'leftRing', colorClass: 'active-ring' },
     'l': { id: 'rightRing', colorClass: 'active-ring' },
     ' ': { id: 'thumb', colorClass: 'active' }
@@ -147,7 +151,7 @@ function restartLesson() {
 
 // Next lesson (placeholder)
 function nextLesson() {
-    const nextLevelPath = "";
+    const nextLevelPath = "index4.html";
 
     if (!nextLevelPath || nextLevelPath.trim() === "") {
         alert("🚀 Coming Soon! More levels are on the way.");
