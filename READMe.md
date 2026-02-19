@@ -14,7 +14,7 @@
 
 *Where speed meets precision. Master the art of typing with KeyCraft.*
 
-[🌐 Live Demo]() • [📖 Documentation]() • [🐛 Report Bug]() 
+[🌐 Live Demo](https://keycraft-touch-typing.netlify.app/)• [🐛 Report Bug](https://docs.google.com/forms/d/e/1FAIpQLSfQFfuEEjqb2cWVFDauu4WxLa3_-bPsGf5yZTToEgVg9z5ZFA/viewform?usp=publish-editor) 
 </div>
 
 ---
