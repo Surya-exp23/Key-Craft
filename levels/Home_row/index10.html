@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyCRAFT - Home Row</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">key<span>CRAFT</span></div>
+            <div class="level-badge">Level 10: Home Row</div>
+        </header>
+
+        <div class="main-content">
+            <h2 class="lesson-title">SpeedUp Home row</h2>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="text-display">
+                <div class="text-content" id="textContent"></div>
+            </div>
+
+            <div class="hands-container">
+                <!-- Left Hand -->
+                <div class="hand" id="leftHand">
+                    <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Palm -->
+                        <path d="M 50 160 Q 40 200 50 240 L 150 240 Q 160 200 150 160 Z" 
+                              fill="#1a1a1a" stroke="#fff" stroke-width="2"/>
+                        
+                        <!-- Pinky -->
+                        <ellipse cx="60" cy="60" rx="12" ry="45" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="leftPinky"/>
+                        
+                        <!-- Ring -->
+                        <ellipse cx="85" cy="45" rx="12" ry="50" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="leftRing"/>
+                        
+                        <!-- Middle -->
+                        <ellipse cx="110" cy="40" rx="12" ry="55" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="leftMiddle"/>
+                        
+                        <!-- Index -->
+                        <ellipse cx="135" cy="45" rx="13" ry="50" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="leftIndex"/>
+                        
+                        <!-- Thumb -->
+                        <ellipse cx="165" cy="180" rx="18" ry="35" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="thumb" id="leftThumb"
+                                 transform="rotate(-30 165 180)"/>
+                        
+                        <!-- Key labels on fingers -->
+                        <text x="60" y="65" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">A</text>
+                        <text x="85" y="50" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">S</text>
+                        <text x="110" y="45" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">D</text>
+                        <text x="135" y="50" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">F</text>
+                    </svg>
+                </div>
+
+                <!-- Right Hand -->
+                <div class="hand" id="rightHand">
+                    <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Palm -->
+                        <path d="M 50 160 Q 40 200 50 240 L 150 240 Q 160 200 150 160 Z" 
+                              fill="#1a1a1a" stroke="#fff" stroke-width="2"/>
+                        
+                        <!-- Index -->
+                        <ellipse cx="65" cy="45" rx="13" ry="50" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="rightIndex"/>
+                        
+                        <!-- Middle -->
+                        <ellipse cx="90" cy="40" rx="12" ry="55" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="rightMiddle"/>
+                        
+                        <!-- Ring -->
+                        <ellipse cx="115" cy="45" rx="12" ry="50" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="rightRing"/>
+                        
+                        <!-- Pinky -->
+                        <ellipse cx="140" cy="60" rx="12" ry="45" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="finger" id="rightPinky"/>
+                        
+                        <!-- Thumb -->
+                        <ellipse cx="35" cy="180" rx="18" ry="35" 
+                                 stroke="#fff" stroke-width="2" 
+                                 class="thumb" id="rightThumb"
+                                 transform="rotate(30 35 180)"/>
+                        
+                        <!-- Key labels on fingers -->
+                        <text x="65" y="50" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">J</text>
+                        <text x="90" y="45" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">K</text>
+                        <text x="115" y="50" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">L</text>
+                        <text x="140" y="65" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Space Mono">;</text>
+                    </svg>
+                </div>
+            </div>
+
+            <p class="instruction">👆 Watch the highlighted finger and type the letter shown above</p>
+        </div>
+    </div>
+
+    <!-- Completion Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">🎉 Level Complete!</h2>
+                <p class="modal-subtitle">Great job learning the home row!</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Speed</div>
+                    <div class="stat-value">
+                        <span id="wpmValue">0</span>
+                        <span class="stat-unit">WPM</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value">
+                        <span id="accuracyValue">0</span>
+                        <span class="stat-unit">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="restartLesson()">Try Again</button>
+                <button class="btn btn-primary" onclick="nextLesson()">Next Level</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script10.js"></script>
+</body>
+</html>
