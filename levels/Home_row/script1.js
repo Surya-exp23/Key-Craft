@@ -152,7 +152,7 @@ function nextLesson() {
     const nextLevelPath = "index2.html"; 
 
     if (!nextLevelPath || nextLevelPath.trim() === "") {
-        alert("Next level not available yet 🚧");
+        alert("🚀 Coming Soon! More levels are on the way.");
         return;
     }
 

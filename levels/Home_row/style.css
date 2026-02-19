@@ -362,7 +362,7 @@ header {
 
 .star {
     color: var(--primary-purple);
-    filter: drop-shadow(0 2px 8px var(--primary-purple));
+    /* filter: drop-shadow(0 2px 8px var(--primary-purple)); */
     animation: starPop 0.5s ease backwards;
 }
 
