@@ -1,23 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const video = document.querySelector('video');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const video = document.querySelector('video');
             
-    if (video) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                video.play();
-            } 
-            else {
-                video.pause();
-                }
-            });
-        }, 
-        { threshold: 0.5 });
+//     if (video) {
+//         const observer = new IntersectionObserver((entries) => {
+//             entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 video.play();
+//             } 
+//             else {
+//                 video.pause();
+//                 }
+//             });
+//         }, 
+//         { threshold: 0.5 });
 
-        observer.observe(video.closest('section'));
+//         observer.observe(video.closest('section'));
 
-    }
-});
+//     }
+// });
 
 
 function toggleDropdown(section) {
@@ -107,5 +107,5 @@ sr.reveal(`.levelup12`)
 
 
 sr.reveal(`.review12`)
-sr.reveal(`.revcard12`,{delay:400,interval: 100})
+sr.reveal(`.revcard12`,{delay:300,interval: 100})
 

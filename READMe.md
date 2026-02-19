@@ -35,6 +35,13 @@
 
 Our mission is to make typing practice enjoyable and effective. We believe that everyone deserves the tools to communicate faster and more accurately in the digital world. KeyCraft bridges the gap between practice and perfection.
 
+--- 
+## 🎯 Why Touch Typing Matters
+- A crucial skill for developers, students, and professionals in daily digital tasks.
+- Using all fingers improves typing speed, accuracy, and reduces hand fatigue.
+- Better finger coordination enhances focus, productivity, and long-term efficiency.
+
+
 ---
 
 
@@ -48,7 +55,7 @@ Our mission is to make typing practice enjoyable and effective. We believe that 
 | 🎯 **Accuracy Metrics** | Track your precision with detailed accuracy percentages |
 | 📊 **Visual Analytics** | Beautiful charts and graphs to visualize your progress |
 | 🎨 **Modern Design** | Modern touch with practicality 
-| 🏆 **Leaderboards** | Compete with others and climb the rankings(upcoming) |
+| 🏆 **Leaderboards** | Compete with others and climb the rankings(coming soon) |
 | 👤 **Practice test** | Track your speed with mini practice test per time or word.
 
 </div>
@@ -70,7 +77,7 @@ JavaScript     - Interactive functionality and logic
 ```
 Remix Icon     - Beautiful icon library
 Google Fonts   - Typography (Poppins, , etc.)
-Reveal           - Reveal animations open source library(if applicable)
+Reveal         - Reveal animations open source library(if applicable)
 ```
 
 ### Tools & Utilities
@@ -88,35 +95,34 @@ VS Code        - Primary development environment
 keyCraft/  
 │  
 ├── home-landing page                
-│   ├──  index.html     #landing page interface  
+│  ├──  index.html     #landing page interface  
 │  ├──  input.css   #styles(tailwind)  
 │  └── assests   
 │     
 ├── login_page  
-│   ├── index.html  # Main typing test page  
+│   ├── index.html  #login  page  
 │   ├── style.js             # login logic    
 │   └── script.css              
 │  
 ├── stats_dashbaord/  
-│   ├── index.html          # Hero section background video  
-│   ├── style.css           # Alternative background image  
-│   ├── scipt.js            # Mascot illustration  
-│   └── assests         # Year badge  
+│   ├── index.html          # Main page where all records shows  
+│   ├── style.css           #  styling of dashboard page  
+│   ├── scipt.js            # Logic (Will keep adding..)  
+│   └── assests           
 │  
 │  
 ├── about us/  
-│   ├── index.html  
-│   ├── style.css   
-│   ├── script.js  
-│   └──assests  
+│   ├── index.html  # about us section structure  
+│   ├── style.css   # modern styling  
+│   └──assests    
 │  
 ├── contact us/   
-│   ├── index.html              # Main application logic  
-│   ├── style.css               # Authentication handlers    
+│   ├── index.html              # structure  
+│   ├── style.css               # modern styling    
 │   └──assests   
 │              
 ├── levels_page  
-│   ├── index.html  
+│   ├── index.html   
 │   ├── style.css    
 │   └──script.js  
 │   
@@ -155,11 +161,37 @@ keyCraft/
    ```
 
 ---
+
+# 🔮 Future Improvements & Scope
+## Team will continue adding new features with learning curve.
+
+### Extra Features
+-  **Multi-language Support**: Add support for different languages and keyboard layouts
+-  **Custom Tests**: Allow users to create their own typing tests
+-  **Difficulty Levels**: Beginner, Intermediate, Advanced text options
+
+###  Social & Competitive
+-  **Global Leaderboards**: Real-time rankings with filtering options
+-  **Multiplayer Mode**: Race against friends in real-time
+
+
+###  Gamification
+-  **Daily Challenges**: New typing challenges every day
+- **Streak System**: Maintain daily practice streaks
+
+###  Technical Enhancements
+-  **Backend Integration**: User authentication and data persistence  
+-  **Database**: Store user profiles and statistics
+-  **API Development**: RESTful API for mobile apps
+-  **Performance Optimization**: Faster load times and smoother animations
+
+
+---
 # 👥 Meet The Expeditioners
 
 <div align="center">
 
-### *Team of passionate developers pushing boundaries*
+### *Team of passionate learners*
 
 </div>
 
@@ -212,3 +244,7 @@ keyCraft/
 </table>
 
 <div align="center">
+
+--- 
+####  Made with 💜 by The Expeditioners 
+##### ⭐ Star this repo if you find it helpful! ⭐  
