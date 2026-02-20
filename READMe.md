@@ -217,7 +217,7 @@ keyCraft/
       <img src="./about us/assests/pfp4.jpeg" alt="Team Member" style="border-radius: 50%;" width="100"/><br/>
       <b>Tanuraj Bhati</b><br/>
       <sub>frontend developer</sub><br/> <br>
-      <a href="www.linkedin.com/in/tanuraj-bhati-861568324">
+      <a href="https://www.linkedin.com/in/tanuraj-bhati-861568324/">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
       </a>
     </td>
